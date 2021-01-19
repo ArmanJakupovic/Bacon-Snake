@@ -1,0 +1,332 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{95E1EB76-BDD9-4D47-81B1-7E37F61997BC}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>SnakeMenu</RootNamespace>
+    <AssemblyName>SnakeMenu</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>Client</TargetFrameworkProfile>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="frmAboutGame.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmAboutGame.Designer.cs">
+      <DependentUpon>frmAboutGame.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmControlInput.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmControlInput.Designer.cs">
+      <DependentUpon>frmControlInput.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmGameOver.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmGameOver.Designer.cs">
+      <DependentUpon>frmGameOver.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmHowTo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmHowTo.Designer.cs">
+      <DependentUpon>frmHowTo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmMainGame.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmMainGame.Designer.cs">
+      <DependentUpon>frmMainGame.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmSnakeMenu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmSnakeMenu.Designer.cs">
+      <DependentUpon>frmSnakeMenu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="frmAboutGame.resx">
+      <DependentUpon>frmAboutGame.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmControlInput.resx">
+      <DependentUpon>frmControlInput.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmGameOver.resx">
+      <DependentUpon>frmGameOver.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmHowTo.resx">
+      <DependentUpon>frmHowTo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmMainGame.resx">
+      <DependentUpon>frmMainGame.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmSnakeMenu.resx">
+      <DependentUpon>frmSnakeMenu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="ClassDiagram1.cd" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\baconutanh.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\A.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\B.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\C.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\D.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\E.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\F.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\G.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\H.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\I.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\J.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\K.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\L.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\M.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\N.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\O.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\P.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Q.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\R.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\S.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\T.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\U.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\V.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\W.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\X.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Y.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Z.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\backon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bacon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bacon2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bakgrund1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\backoff.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Oem1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Oem6.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Oem7.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Oemcomma.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\OemMinus.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\OemPeriod.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\OemQuestion.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Oemtilde.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Down.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Left.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Right.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Up.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\snakeGrid2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Delete.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\End.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Escape.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Home.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Insert.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Next.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\NumPad0.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\NumPad1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\NumPad2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\NumPad3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\NumPad4.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\NumPad5.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\NumPad6.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\NumPad7.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\NumPad8.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\NumPad9.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\PageUp.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\snakeGrid3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\GAMEOVER.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ok.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\okover.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
